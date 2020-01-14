@@ -1,0 +1,59 @@
+.kt-header-mobile .kt-header__brand-logo-default {
+  height: 52px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cc-window {
+  background-color: #282a3a;
+}
+
+.cc-btn {
+  background-color: #5867dd;
+  border-color: #5867dd;
+  color: #ffffff;
+}
+
+.cc-message {
+  color: #fefefe;
+}
+
+.kt-head--skin-dark {
+  background-color: #1a1a27;
+}
+
+body.kt-aside--static .kt-aside-menu {
+  margin-top: 75px;
+}
+
+.kt-header__topbar .subscription-warning {
+  padding-top: 23px;
+}
+
+.unread-notification-count {
+  position: absolute;
+  top: 13px;
+  right: 3px;
+}
+
+.menuSearchBarContainer {
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+.menuSearchBarInput {
+  width: 214px !important;
+}
+
+.kt-aside-menu-dark .menuSearchBarInput {
+  background-color: rgb(18, 18, 30) !important;
+  border: 1px solid rgb(44, 45, 68) !important;
+  color: #9899ac !important;
+}
+.kt-aside-menu-dark .menuSearchBarInput:focus {
+  border-color: #7380fc !important;
+  color: #fff !important;
+}
+body.kt-aside--minimize .menuSearchBarContainer {
+  display: none;
+}

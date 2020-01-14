@@ -1,0 +1,46 @@
+<div class="kt-portlet kt-portlet--height-fluid recent-tenants">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+            <h3 class="kt-portlet__head-title">
+                Profit Share
+                <small>
+                    Profit Share between customers
+                </small>
+            </h3>
+        </div>
+    </div>
+    <div class="kt-portlet__body"  [perfectScrollbar]>
+        <div class="kt-widget14">
+            <div class="row kt-widget14__content">
+                <div class="col-lg-6 col-md-12" style="max-height:300px ">
+                    <ngx-charts-pie-chart [results]="profitSharePieChart.chartData"
+                        [doughnut]="true" [legend]="false" [labels]="false"
+                        [scheme]="profitSharePieChart.scheme" [animations]="false"
+                        [tooltipDisabled]="true">
+                    </ngx-charts-pie-chart>
+                </div>
+                <div class="col-lg-6 col-md-12 kt-widget14__legends"
+                    *ngIf="profitSharePieChart.chartData.length">
+                    <div class="kt-widget14__legend">
+                        <span class="kt-widget14__bullet kt-bg-success"></span>
+                        <span class="kt-widget14__stats" ng-if="profitSharePieChart.chartData">
+                            {{profitSharePieChart.chartData[0].value}}
+                        </span>
+                    </div>
+                    <div class="kt-widget14__legend">
+                        <span class="kt-widget14__bullet kt-bg-warning"></span>
+                        <span class="kt-widget14__stats">
+                            22% Online Courses
+                        </span>
+                    </div>
+                    <div class="kt-widget14__legend">
+                        <span class="kt-widget14__bullet kt-bg-brand"></span>
+                        <span class="kt-widget14__stats">
+                            33% Custom Development
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

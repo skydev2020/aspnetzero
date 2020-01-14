@@ -1,0 +1,25 @@
+<div class="kt-portlet kt-portlet--height-fluid edition-statistics">
+        <div class="kt-portlet__head">
+            <div class="kt-portlet__head-label">
+                <h3 class="kt-portlet__head-title">
+                    <i class="la la-pie-chart kt-font-success"></i>
+                    <span
+                        class="caption-subject font-green-seagreen">{{"EditionStatistics" | localize}}</span>
+                    <small>
+                        <span class="caption-helper">
+                            {{selectedDateRange[0] | momentFormat: 'L'}} -
+                            {{selectedDateRange[1] | momentFormat: 'L'}}
+                        </span>
+                    </small>
+                </h3>
+            </div>
+        </div>
+        <div class="kt-portlet__body" [perfectScrollbar]>
+            <ngx-charts-pie-chart *ngIf="editionStatisticsHasData" [results]="editionStatisticsData"
+                [legend]="true" [doughnut]="true" [arcWidth]="0.75">
+            </ngx-charts-pie-chart>
+            <div class="note note-info text-center chart" [hidden]="editionStatisticsHasData">
+                <small class="text-muted">{{"NoData" | localize}}</small>
+            </div>
+        </div>
+    </div>

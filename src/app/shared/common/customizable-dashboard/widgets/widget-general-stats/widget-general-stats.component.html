@@ -1,0 +1,20 @@
+<div class="kt-portlet kt-portlet--height-fluid ">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+            <h3 class="kt-portlet__head-title">
+                General Stats
+            </h3>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+            <a href="javascript:;" class="btn btn-primary" (click)="generalStatsPieChart.reload()">
+                <i class="fa fa-redo"></i> Refresh
+            </a>
+        </div>
+    </div>
+    <div class="kt-portlet__body" [perfectScrollbar]>
+        <div class="row" style="max-height: 200px">
+            <ngx-charts-pie-grid [results]="generalStatsPieChart.data">
+            </ngx-charts-pie-grid>
+        </div>
+    </div>
+</div>

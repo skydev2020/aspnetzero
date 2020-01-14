@@ -1,0 +1,70 @@
+.kt-header-mobile .kt-header__brand-logo-default {
+  height: 52px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cc-window {
+  background-color: #282a3a;
+}
+.cc-btn {
+  background-color: #5867dd;
+  border-color: #5867dd;
+  color: #ffffff;
+}
+.cc-message {
+  color: #fefefe;
+}
+.kt-header__topbar-username {
+  color: #8a88a2 !important;
+}
+li.kt-menu__item.kt-menu__item--hover span.kt-menu__link-icon {
+  background-color: transparent !important;
+}
+.kt-header__topbar .subscription-warning {
+  padding-top: 30px;
+}
+.unread-notification-count {
+    position: absolute;
+    top: 19px;
+    right: 1px;
+    font-size: 1.0rem !important;
+}
+
+theme7-brand{
+  display: flex;
+  flex: none;
+  height: 80px;
+}
+
+@media (min-width: 1024px) {
+    .menuSearchBarContainer {
+        width: 80px;
+        margin: 0 10px;
+      }
+
+    .menuSearchBarContainer:hover {
+      -webkit-transition: width 0.5s ease-in-out;
+      -moz-transition: width 0.5s ease-in-out;
+      -o-transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out;
+
+      width:250px;
+    }
+    .menuSearchBarInput {
+      width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 1024px) {
+  .menuSearchBarContainer {
+      width: 100%;
+      margin: 0 10px;
+    }
+    .menuSearchBarInput {
+      width: 214px;
+    }
+
+    theme7-brand{
+      height: 30px !important;
+    }
+}

@@ -1,0 +1,130 @@
+.kt-header-mobile .kt-header__brand-logo-default {
+    height: 52px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cc-window {
+    background-color: #282a3a;
+}
+
+.cc-btn {
+    background-color: #5867dd;
+    border-color: #5867dd;
+    color: #ffffff;
+}
+
+.cc-message {
+    color: #fefefe;
+}
+
+body {
+    background-image: url(/assets/metronic/themes/theme4/images/bg/header.jpg);
+}
+
+body div.kt-header__brand-logo a.dark {
+    display: block;
+}
+
+body div.kt-header__brand-logo a.light {
+    display: none;
+}
+
+body .kt-header__topbar .subscription-warning {
+    padding-top: 32px;
+}
+
+body .kt-header__topbar .subscription-warning a span {
+    color: #fff;
+    white-space: nowrap;
+}
+
+body.kt-header--minimize div.kt-header__brand-logo a.light {
+    display: block;
+}
+
+body.kt-header--minimize div.kt-header__brand-logo a.dark {
+    display: none;
+}
+
+body.kt-header--minimize .kt-menu__hor-arrow {
+    color: #b5b2c8 !important;
+}
+
+body.kt-header--minimize .kt-header__topbar .subscription-warning {
+    padding-top: 22px;
+}
+
+body.kt-header--minimize .kt-header__topbar .subscription-warning span {
+    color: #000;
+}
+
+.kt-subheader__main span.kt-subheader__separator {
+    display: none !important;
+}
+
+.kt-subheader__main span.kt-subheader__desc {
+    font-size: 1rem !important;
+}
+
+#kt_header_menu_wrapper {
+    height: 100% !important;
+}
+
+.kt-header__topbar .kt-header__topbar-item.kt-header__topbar-item--langs {
+    margin-right: 0;
+}
+
+.unread-notification-count {
+    position: absolute;
+    top: 20px !important;
+    left: 25px !important;
+    right: 11px;
+    font-size: 1rem !important;
+    background-color: #ff0000 !important;
+    padding: 9px;
+}
+
+.menuSearchBarContainer {
+    margin-top: 5px;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .menuSearchBarContainer {
+        width: calc(100% - 20px);
+        margin: 0 10px 10px 10px;
+    }
+
+    .menuSearchBarContainer,
+    .menuSearchBarInput,
+    .menuSearchBarInput::placeholder {
+        color: #6c7293 !important;
+    }
+
+    .menuSearchBarInput,
+    .menuSearchBarInput:hover {
+        border: 1px solid #a6a6a6 !important;
+    }
+
+    .menuSearchBarInput {
+        width: 214px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menuSearchBarInput {
+        width: 150px !important;
+        background-color: transparent !important;
+        border: 1px solid #fff !important;
+        color: #fff !important;
+    }
+
+    .menuSearchBarInput:hover {
+        border: 1px solid #fff !important;
+    }
+
+    .menuSearchBarInput::placeholder {
+        color: #fff;
+    }
+}

@@ -1,0 +1,55 @@
+<div class="kt-portlet kt-portlet--height-fluid income-statistics">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+            <h3 class="kt-portlet__head-title">
+                <i class="la la-line-chart kt-font-info"></i>
+                <span class="caption-subject font-blue bold uppercase">{{"IncomeStatistics" | localize}}</span>
+                <small>
+                    <span class="caption-helper">
+                        {{selectedDateRange[0] | momentFormat: 'L'}} -
+                        {{selectedDateRange[1] | momentFormat: 'L'}}
+                    </span>
+                </small>
+            </h3>
+        </div>
+        <div class="kt-portlet__head-toolbar">
+            <div class="btn-group btn-group-devided" data-toggle="buttons">
+                <label class="btn m-btn--pill btn-secondary"
+                    [ngClass]="{'active': selectedIncomeStatisticsDateInterval ==  appIncomeStatisticsDateInterval.Daily}"
+                    (click)="incomeStatisticsDateIntervalChange(appIncomeStatisticsDateInterval.Daily)">
+                    <input type="radio" name="IncomeStatisticsDatePeriod" class="toggle"
+                        [value]="appIncomeStatisticsDateInterval.Daily">
+                    {{"Daily" | localize}}
+                </label>
+                <label class="btn m-btn--pill btn-secondary"
+                    [ngClass]="{'active': selectedIncomeStatisticsDateInterval ==  appIncomeStatisticsDateInterval.Weekly}"
+                    (click)="incomeStatisticsDateIntervalChange(appIncomeStatisticsDateInterval.Weekly)">
+                    <input type="radio" name="IncomeStatisticsDatePeriod" class="toggle"
+                        [value]="appIncomeStatisticsDateInterval.Weekly">
+                    {{"Weekly" | localize}}
+                </label>
+                <label class="btn m-btn--pill btn-secondary"
+                    [ngClass]="{'active': selectedIncomeStatisticsDateInterval ==  appIncomeStatisticsDateInterval.Monthly}"
+                    (click)="incomeStatisticsDateIntervalChange(appIncomeStatisticsDateInterval.Monthly)">
+                    <input type="radio" name="IncomeStatisticsDatePeriod" class="toggle"
+                        [value]="appIncomeStatisticsDateInterval.Monthly">
+                    {{"Monthly" | localize}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="kt-portlet__body" [perfectScrollbar]>
+        <ngx-charts-area-chart *ngIf="incomeStatisticsHasData" [busyIf]="loadingIncomeStatistics"
+            [results]="incomeStatisticsData" [showXAxisLabel]="true" showYAxisLabel="true" [xAxis]="true" [yAxis]="true"
+            [showGridLines]="true">
+            <ng-template #tooltipTemplate let-model="model">
+                <span>{{model.name}}</span>
+                <br />
+                <span>{{'IncomeWithAmount' | localize}} {{model.value + ' ' + _sessionService.application.currencySign}}</span>
+            </ng-template>
+        </ngx-charts-area-chart>
+        <div class="note note-info text-center chart" [hidden]="incomeStatisticsHasData">
+            <small class="text-muted">{{"NoData" | localize}}</small>
+        </div>
+    </div>
+</div>

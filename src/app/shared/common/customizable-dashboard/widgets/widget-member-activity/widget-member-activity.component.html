@@ -1,0 +1,66 @@
+<div class="kt-portlet kt-portlet--height-fluid ">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+
+            <h3 class="kt-portlet__head-title">
+                Member Activity
+            </h3>
+
+        </div>
+        <div class="kt-portlet__head-toolbar">
+            <button (click)="memberActivityTable.reload()" class="btn btn-primary"><i
+                    class="fa fa-sync"></i> Refresh</button>
+        </div>
+    </div>
+    <div class="kt-portlet__body"  [perfectScrollbar]>
+        <div class="table-scrollable table-scrollable-borderless">
+            <table class="table table-hover table-light">
+                <thead>
+                    <tr class="uppercase">
+                        <th colspan="2">
+                            MEMBER
+                        </th>
+                        <th>
+                            Earnings
+                        </th>
+                        <th>
+                            CASES
+                        </th>
+                        <th>
+                            CLOSED
+                        </th>
+                        <th>
+                            RATE
+                        </th>
+                    </tr>
+                </thead>
+                <tr *ngFor="let m of memberActivityTable.memberActivities; let index = index">
+                    <td class="fit">
+                        <div class="kt-user-card-v2">
+                            <div class="kt-user-card-v2__pic">
+                                <img alt="photo"
+                                    src="/assets/metronic/common/images/users/100_{{index + 1}}.jpg">
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <a href="javascript:;" class="primary-link">{{m.name}}</a>
+                    </td>
+                    <td>
+                        {{m.earnings}}
+                    </td>
+                    <td>
+                        {{m.cases}}
+                    </td>
+                    <td>
+                        {{m.closed}}
+                    </td>
+                    <td>
+                        <span class="bold font-green-haze">{{m.rate}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,127 @@
+.input-group span.input-group-btn button {
+    border-bottom-right-radius: 3.5px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3.5px;
+    border-top-left-radius: 0px;
+}
+
+    .input-group span.input-group-btn button i {
+        font-size: 1rem;
+        color: white;
+        padding-right: 0px;
+    }
+
+html[dir=rtl] .input-group span.input-group-btn button {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 3.5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 3.5px;
+}
+
+.small-profile-pic {
+    height: 30px;
+}
+
+.easy-pie-chart {
+    text-align: center;
+}
+
+    .easy-pie-chart .number {
+        font-size: 14px !important;
+        font-weight: 300;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+    }
+
+        .easy-pie-chart .number canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    .easy-pie-chart .title {
+        display: block;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+        .easy-pie-chart .title:hover {
+            text-decoration: none;
+        }
+
+        .easy-pie-chart .title > i {
+            margin-top: 5px;
+        }
+
+.modal .modal-content .modal-header .close:before {
+    cursor: pointer !important;
+}
+
+.kt-badge.kt-badge--inline {
+    border-radius: 2px;
+}
+
+.kt-header__topbar-user {
+    display: flex;
+}
+
+.mobile-subscription-warning {
+    background-color: #fff;
+}
+
+.kt-quick-panel {
+    overflow-y: hidden !important;
+}
+
+.kt-grid.kt-grid--hor.kt-grid--root {
+    height: 100vh;
+}
+
+.form-control:disabled{
+    background-color: #f4f4f4 !important;
+}
+
+.unread-notification {
+    color: #e74c3c !important;
+}
+
+.swal2-container{
+    cursor: pointer;
+}
+
+.dropdown-menu, bs-dropdown-container{
+    z-index: 101 !important;
+}
+
+.menuSearchBarInput {
+    font-family: "Poppins" !important;
+    border-radius: 5px !important;
+    height: 40px !important;
+    margin-left: 14px !important;
+    padding-left: 36px !important;
+}
+
+.menuSearchBarContainer::before {
+    content: "\f2eb";
+    position: absolute;
+    left: 28px;
+    top: 13px;
+    z-index: 234234234;
+    display: inline-block;
+    font: normal normal normal 16px/1 "LineAwesome";
+    font-size: inherit;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+}
+
+.kt-header__topbar .dropdown-toggle::after {
+    display: none;
+}

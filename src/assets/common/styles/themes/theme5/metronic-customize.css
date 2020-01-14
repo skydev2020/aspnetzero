@@ -1,0 +1,62 @@
+.kt-header-mobile .kt-header__brand-logo-default {
+  height: 52px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cc-window {
+  background-color: #282a3a;
+}
+
+.cc-btn {
+  background-color: #5867dd;
+  border-color: #5867dd;
+  color: #ffffff;
+}
+
+.cc-message {
+  color: #fefefe;
+}
+
+.kt-header__topbar-user span.kt-header__topbar-username {
+  display: none !important;
+}
+
+body ul.kt-menu__nav li.kt-menu__item--here .kt-menu__hor-arrow,
+body ul.kt-menu__nav li:not(.kt-menu__item--active):hover .kt-menu__hor-arrow {
+  color: #3d94fb !important;
+}
+
+body .mobile-subscription-warning {
+  background-color: transparent !important;
+}
+
+.unread-notification-count {
+  position: absolute;
+  top: -4px;
+  font-size: 1.0rem !important;
+}
+
+.kt-footer__copyright {
+  display: inline-block;
+  margin-left: 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .menuSearchBarContainer {
+    width: calc(100% - 20px);
+    margin: 0 10px 10px 10px;
+  }
+
+  .menuSearchBarInput {
+    width: 214px;
+  }
+}
+
+.menuSearchBarContainer {
+  margin-right: 14px;
+}
+
+.menuSearchBarContainer .ui-autocomplete-panel {
+  margin-left: 14px;
+}

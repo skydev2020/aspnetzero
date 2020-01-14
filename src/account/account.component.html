@@ -1,0 +1,11 @@
+<div [ngClass]="{'kt-grid kt-grid--ver kt-grid--root': !useFullWidthLayout(), 'kt-content': useFullWidthLayout() }" [style.text-align]="useFullWidthLayout() ? 'center' : 'left'">
+    <div [ngClass]="{'kt-grid kt-grid--hor kt-grid--root  kt-login kt-login--v1': !useFullWidthLayout(), 'row':useFullWidthLayout()}" id="kt_login">
+        <div [ngClass]="{'kt-grid__item kt-grid__item--fluid kt-grid kt-grid--desktop kt-grid--ver-desktop kt-grid--hor-tablet-and-mobile': !useFullWidthLayout(), 'col-md-12': useFullWidthLayout()}">            
+            <div class="kt-grid__item kt-grid__item--fluid  kt-grid__item--order-tablet-and-mobile-1  kt-login__wrapper d-block">
+                <div class="kt-login__body d-block mt-3 mr-auto ml-auto">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

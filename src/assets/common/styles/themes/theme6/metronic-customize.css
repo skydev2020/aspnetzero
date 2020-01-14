@@ -1,0 +1,62 @@
+.kt-header-mobile .kt-header__brand-logo-default {
+  height: 52px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cc-window {
+  background-color: #282a3a;
+}
+.cc-btn {
+  background-color: #5867dd;
+  border-color: #5867dd;
+  color: #ffffff;
+}
+.cc-message {
+  color: #fefefe;
+}
+.kt-header__topbar-username {
+  color: #8a88a2 !important;
+}
+.kt-header__topbar .subscription-warning {
+  padding-top: 32px;
+}
+.unread-notification-count {
+    position: absolute;
+    top: 19px;
+    right: 1px;
+    font-size: 1.0rem !important;
+}
+.menuSearchBarInput {
+  width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
+@media (min-width: 1024px) { 
+  .menuSearchBarContainer input::placeholder {
+    font-size: 0em;
+  }
+  .menuSearchBarContainer input:-ms-input-placeholder{
+    font-size: 0em;
+  }
+  .menuSearchBarContainer input::-ms-input-placeholder {
+    font-size: 0em;
+  }
+
+  .kt-aside--minimize-hover .menuSearchBarContainer input::placeholder {
+    font-size: 1em;
+  }
+  .kt-aside--minimize-hover .menuSearchBarContainer input:-ms-input-placeholder{
+    font-size: 1em;
+  }
+  .kt-aside--minimize-hover .menuSearchBarContainer input::-ms-input-placeholder {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1024px){
+  .menuSearchBarContainer{
+    width: 214px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}

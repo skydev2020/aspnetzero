@@ -1,0 +1,80 @@
+.cc-window {
+    background-color: #282a3a;
+}
+
+.cc-btn {
+    background-color: #5867dd;
+    border-color: #5867dd;
+    color: #ffffff;
+}
+
+.cc-message {
+    color: #fefefe;
+}
+
+.kt-header__topbar-username {
+    color: #c7c7de !important;
+}
+
+.kt-menu__link-text {
+    text-align: center;
+}
+
+body .kt-header__topbar .subscription-warning {
+    padding-top: 32px;
+}
+
+body.kt-header--minimize .kt-header__topbar .subscription-warning {
+    padding-top: 18px;
+}
+
+@media (max-width: 1024px) {
+    .kt-header__topbar .kt-header__topbar-item.kt-header__topbar-item--user .kt-header__topbar-wrapper {
+        height: auto;
+    }
+}
+
+.unread-notification-count {
+    position: absolute;
+    top: 23px;
+    right: 0px;
+    font-size: 1rem !important;
+    height: 10px !important;
+    width: 10px !important;
+    background-color: #ff0000 !important;
+    padding: 9px;
+}
+
+.menuSearchBarContainer {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+.menuSearchBarInput {
+    background-color: rgb(18, 18, 30) !important;
+    border: 1px solid rgb(44, 45, 68) !important;
+    width: 121px !important;
+    color: #9899ac !important;
+    margin-left: 0px !important;
+}
+
+.menuSearchBarContainer::before{
+    left: 13px !important;
+}
+
+.menuSearchBarInput:focus {
+    border-color: #7380fc !important;
+    color: #fff !important;
+}
+
+@media (max-width: 1024px) {
+    .menuSearchBarInput {
+        width: 214px !important;
+        margin-bottom: 5px;
+        margin-left: 13px !important;
+    }
+
+    .menuSearchBarContainer::before{
+        left: 28px !important;
+    }
+}

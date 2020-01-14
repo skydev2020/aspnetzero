@@ -1,0 +1,56 @@
+<div class="kt-portlet m-portlet--full-height">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+
+            <h3 class="kt-portlet__head-title">
+                Regional Stats
+            </h3>
+
+        </div>
+    </div>
+    <div class="kt-portlet__body"  [perfectScrollbar]>
+        <div id="region_statistics_content">
+            <div class="table-responsive">
+                <!--begin::Table-->
+                <table class="table">
+                    <!--begin::Thead-->
+                    <thead>
+                        <tr>
+                            <td class="m-widget11__label">#</td>
+                            <td class="m-widget11__app">Country</td>
+                            <td class="m-widget11__sales">Sales</td>
+                            <td class="m-widget11__change">Change</td>
+                            <td class="m-widget11__price">Avg Price</td>
+                            <td class="m-widget11__total">Total</td>
+                        </tr>
+                    </thead>
+                    <!--end::Thead-->
+                    <!--begin::Tbody-->
+                    <tbody>
+                        <tr *ngFor="let stat of regionalStatsTable.stats; let index = index">
+                            <td>
+                                <label class="kt-checkbox">
+                                    <input class="form-control" type="checkbox" />
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>{{stat.countryName}}</td>
+                            <td>{{stat.sales | currency}}</td>
+                            <td>
+                                <div class="m-widget11__chart" style="height:50px; width: 100px">
+                                    <ngx-charts-line-chart [results]="stat.changeData"
+                                        [showGridLines]="false" [animations]="false"
+                                        [tooltipDisabled]="true"
+                                        [customColors]="regionalStatsTable.customColors"
+                                        [curve]="regionalStatsTable.curve"></ngx-charts-line-chart>
+                                </div>
+                            </td>
+                            <td>{{stat.averagePrice | currency}}</td>
+                            <td>{{stat.totalPrice | currency}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

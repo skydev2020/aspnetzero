@@ -1,0 +1,84 @@
+.cc-window {
+    background-color: #282a3a;
+}
+
+.cc-btn {
+    background-color: #5867dd;
+    border-color: #5867dd;
+    color: #ffffff;
+}
+
+.cc-message {
+    color: #fefefe;
+}
+
+body {
+    background-image: url(/assets/metronic/themes/theme8/images/bg/bg-2.jpg);
+}
+
+body .kt-header__topbar .subscription-warning {
+    padding-top: 14px;
+}
+
+body .kt-header__topbar .subscription-warning span {
+    color: #fff;
+}
+
+body.kt-header--minimize .kt-header__topbar .subscription-warning span {
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    body .kt-body {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+
+.kt-user-card .kt-user-card__name {
+    color: #6c7293 !important;
+}
+
+.kt-header__topbar .kt-header__topbar-item.kt-header__topbar-item--langs {
+    margin-right: 0;
+}
+
+.kt-footer .kt-footer__copyright {
+    color: #fff;
+}
+
+.unread-notification-count {
+    position: absolute;
+    top: 5px !important;
+    left: 27 !important;
+    right: 11px;
+    font-size: 1.2rem !important;
+    background-color: #ff0000 !important;
+    padding: 12px;
+}
+
+.menuSearchBarContainer {
+    min-width: 150px !important;
+}
+
+@media (min-width: 1024px) {
+    .menuSearchBarContainer {
+        min-width: 150px !important;
+        margin-right: 14px
+    }
+}
+
+.menuSearchBarContainer .ui-autocomplete-panel {
+    margin-left: 14px
+}
+
+@media (max-width: 1024px) {
+    .menuSearchBarContainer {
+        width: calc(100% - 20px);
+        margin-left: 15px;
+    }
+
+    .menuSearchBarInput{
+        width: 214px;
+    }
+}
