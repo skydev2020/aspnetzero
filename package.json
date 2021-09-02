@@ -50,7 +50,7 @@
     "ngx-image-cropper": "^1.5.1",
     "ngx-perfect-scrollbar": "^8.0.0",
     "ngx-spinner": "^8.0.3",
-    "object-path": "^0.11.4",
+    "object-path": "^0.11.6",
     "primeicons": "^2.0.0",
     "primeng": "^8.0.3",
     "push.js": "^1.0.12",
